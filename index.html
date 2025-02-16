@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Shopping Cart</h1>
+
+    <!-- Product List -->
+    <div class="product-list" id="product-list">
+      <!-- Products will be dynamically added here -->
+    </div>
+
+    <!-- Cart Section -->
+    <div class="cart-section">
+      <h2>Your Cart</h2>
+      <div id="cart-items">
+        <!-- Cart items will be dynamically added here -->
+      </div>
+      <div class="cart-summary">
+        <p>Subtotal: $<span id="subtotal">0.00</span></p>
+        <p>Discount: $<span id="discount">0.00</span></p>
+        <p>Final Total: $<span id="final-total">0.00</span></p>
+      </div>
+      <button id="clear-cart">Clear Cart</button>
+    </div>
+
+    <!-- Promo Code Section -->
+    <div class="promo-code-section">
+      <h2>Apply Promo Code</h2>
+      <input type="text" id="promo-code" placeholder="Enter promo code">
+      <button id="apply-promo">Apply</button>
+      <p id="promo-message"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
